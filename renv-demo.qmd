@@ -3,8 +3,7 @@ title: "renv demo"
 author: "Maëlle Salmon"
 format:
   revealjs:  
-    multiplex: true
-    self-contained: true
+    auto-stretch: false
     hash-type: number
     slide-number: true
     controls: auto
@@ -17,8 +16,37 @@ format:
 
 ## Goals for today
 
+```{r}
+#| echo: false
+get_pic <- function(id, alt, width) {
+  
+  info <- httr::GET(
+    paste0("https://api.pexels.com/v1/photos/", id),
+    httr::add_headers(Authorization = Sys.getenv("PEXELS_KEY"))
+  ) |>
+    httr::content()
+  download.file(info$src$large, paste0(id, ".jpeg"))
+  cat("```{=html}\n")
+cat(glue::glue(
+  '<div style="display:grid; margin-top: 3rem;"><figure>
+    <img src="{id}.jpeg"
+         alt="{alt}" width="{width}"/> <figcaption>
+            <p>Picture by <a href="{info$url}">{info$photographer} on Pexels</a>.</p>
+        </figcaption>
+</figure></div>'
+))
+cat("\n```\n")
+}
+```
 - Why use renv?
 - How to use it
+
+```{r board}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 7718755, alt = "To do list on a clipboard", 400)
+```
 
 ## Your project depends on its dependencies
 
@@ -36,6 +64,21 @@ Some of them come from CRAN, others from R-universe, others from GitHub.
 
 including yourself :wink: should be able to use the same packages and their same versions to re-run your code.
 
+
+```{r wish}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 5723951, alt = "Letter to Santa", 220)
+```
+
+## Ever used `sessionInfo()` to list dependencies?
+
+```{r}
+sessionInfo()
+
+```
+
 ## Ever used `sessionInfo()` to list dependencies?
 
 . . .
@@ -45,3 +88,60 @@ You were on the right track.
 . . .
 
 renv is a better way to do that, with :sparkles: little overhead :sparkles:
+
+```{r cogwheels}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 3785927, alt = "Golden cogwheels on dark background", 360)
+```
+
+## First step: install renv!
+
+## The renv workflow
+
+* Start with `renv::init()`.
+
+* Install packages with `renv::install("ggplot2")`.
+
+* Write code as usual.
+
+* Regularly, `renv::snapshot()`.
+
+## The renv workflow, when adopting a project
+
+`renv::restore()`
+
+## Demo
+
+* The [coolcool](https://github.com/maelle/coolcool) package has two versions on GitHub, with different functions.
+
+* My [project1](https://github.com/maelle/project1) uses the first version.
+
+* My [project2](https://github.com/maelle/project2) uses the second version.
+
+## Further resources on renv itself
+
++ [renv website](https://rstudio.github.io/renv/);
++ ["You should be using renv", talk by E. David Aja ](https://www.rstudio.com/conference/2022/talks/you-should-use-renv/);
++ (in French) ["Package renv : présentation et retour d’expérience" by Elise Maigné](https://r-toulouse.netlify.app/evenements/2021-05-28-diaporama-et-vid%C3%A9o-de-la-rencontre-de-mai-2021/).
+
+```{r sprout}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 1002703, alt = "Close-up photo of sprout", 300)
+```
+
+## Further, further resources
+
++ [capsule by Miles McBain](https://github.com/MilesMcBain/capsule), An inversion of renv for low effort reproducible R package libraries;
+
++ [Docker, blog post by Colin Fay](https://colinfay.me/docker-r-reproducibility/).
+
+```{r carton}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 6831673, alt = "Carton box tied with ribbon and flowers", 400)
+```
