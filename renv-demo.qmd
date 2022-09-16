@@ -1,0 +1,47 @@
+---
+title: "renv demo"
+author: "Maëlle Salmon"
+format:
+  revealjs:  
+    multiplex: true
+    self-contained: true
+    hash-type: number
+    slide-number: true
+    controls: auto
+    from: markdown+emoji
+    theme: [custom.scss]
+    include-after-body: bla.html
+    menu:
+      width: full
+---
+
+## Goals for today
+
+- Why use renv?
+- How to use it
+
+## Your project depends on its dependencies
+
+To state the obvious :sweat_smile: Let's concentrate on software dependencies.
+
+. . .
+
+R packages evolve over time.
+
+. . .
+
+Some of them come from CRAN, others from R-universe, others from GitHub.
+
+## Future users of your code
+
+including yourself :wink: should be able to use the same packages and their same versions to re-run your code.
+
+## Ever used `sessionInfo()` to list dependencies?
+
+. . .
+
+You were on the right track.
+
+. . .
+
+renv is a better way to do that, with :sparkles: little overhead :sparkles:
