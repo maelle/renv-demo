@@ -212,9 +212,13 @@ How do we get there?
 
 * :eyes: look :eyes:
 
+* `coolcool::my_best_function()` :sob:
+
 * `renv::restore()`
 
 * :eyes: look :eyes:
+
+* `coolcool::my_best_function()` :grin:
 
 :::
 
