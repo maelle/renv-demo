@@ -120,6 +120,104 @@ get_pic(id = 3785927, alt = "Golden cogwheels on dark background", 360)
 
 * My [project2](https://github.com/maelle/project2) uses the second version.
 
+## In project1...
+
+* I can run `coolcool::my_favorite_function()`.
+
+* I canNOT run `coolcool::my_best_function()`.
+
+
+## In project2...
+
+* I canNOT run `coolcool::my_favorite_function()`.
+
+* I can run `coolcool::my_best_function()`.
+
+. . .
+
+Why is it so?
+
+## Anatomy of a project using renv
+
+```{r, echo=TRUE}
+fs::dir_ls("../project1", all = TRUE)
+fs::dir_ls("../project1/renv", all = TRUE)
+```
+
+## The `renv.lock` file in project1
+
+```{r, results='asis'}
+cat("\n```yaml")
+cat(
+  glue::glue_collapse(
+    brio::read_lines(file.path("../project1", "renv.lock")),
+    sep = "\n"
+  )
+)
+cat("\n```\n")
+```
+
+## The `renv.lock` file in project2
+
+```{r, results='asis'}
+cat("\n```yaml")
+cat(
+  glue::glue_collapse(
+    brio::read_lines(file.path("../project2", "renv.lock")),
+    sep = "\n"
+  )
+)
+cat("\n```\n")
+```
+
+## The difference
+
+```yaml
+"RemoteRef": "v1.0.0"
+```
+
+vs
+
+```yaml
+"RemoteRef": "v2.0.0"
+```
+
+. . . 
+
+How do we get there?
+
+## project0
+
+::: {.incremental}
+
+* `create_project("../project0")`
+
+* `renv::init()` then :eyes: look :eyes:
+
+* `renv::install("maelle/coolcool")`
+
+* `use_r("blop")`, write `coolcool::my_best_function()`
+
+* `renv::snapshot()` then :eyes: look :eyes:
+
+* `renv::install("usethis")`; `usethis::use_git()`; `usethis::use_github()`
+
+:::
+
+## project0 from GitHub
+
+::: {.incremental}
+
+* In another folder `create_from_github("maelle/project0")`
+
+* :eyes: look :eyes:
+
+* `renv::restore()`
+
+* :eyes: look :eyes:
+
+:::
+
 ## Further resources on renv itself
 
 + [renv website](https://rstudio.github.io/renv/);
