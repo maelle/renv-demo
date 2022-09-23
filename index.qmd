@@ -213,13 +213,13 @@ cat("\n```\n")
 ## The difference
 
 ```yaml
-"RemoteRef": "v1.0.0"
+"Version": "1.0.0"
 ```
 
 vs
 
 ```yaml
-"RemoteRef": "v2.0.0"
+"Version": "2.0.0"
 ```
 
 . . . 
