@@ -123,7 +123,7 @@ get_pic(id = 5691495, alt = "Renovation in an empty light room with wooden lamin
 
 * Write code as usual.
 
-* Regularly, `renv::snapshot()`.
+* Regularly, `renv::snapshot()` (`renv::status()`).
 
 ## The renv workflow, when adopting a project
 
@@ -272,9 +272,20 @@ No! renv creates a central cache from which it can pick packages quickly.
 
 The first installation might take time, the second no because it uses the cache.
 
+## What if I like `sessionInfo()`?
+
+* You can still report it.
+
+* See also `renv::dependencies()`
+
+```{r}
+renv::dependencies()
+```
+
 ## Further resources on renv itself
 
 + [renv website](https://rstudio.github.io/renv/);
++ [What's Missing from renv](https://kevinushey-2020-rstudio-conf.netlify.app/slides.html#139);
 + ["You should be using renv", talk by E. David Aja ](https://www.rstudio.com/conference/2022/talks/you-should-use-renv/);
 + (in French) ["Package renv : présentation et retour d’expérience" by Elise Maigné](https://r-toulouse.netlify.app/evenements/2021-05-28-diaporama-et-vid%C3%A9o-de-la-rencontre-de-mai-2021/).
 

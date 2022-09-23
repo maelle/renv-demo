@@ -500,7 +500,7 @@ loaded via a namespace (and not attached):
 <li><p>Start with <code>renv::init()</code>.</p></li>
 <li><p>Install packages with <code>renv::install("ggplot2")</code>.</p></li>
 <li><p>Write code as usual.</p></li>
-<li><p>Regularly, <code>renv::snapshot()</code>.</p></li>
+<li><p>Regularly, <code>renv::snapshot()</code> (<code>renv::status()</code>).</p></li>
 </ul>
 </section>
 <section class="slide level2">
@@ -697,9 +697,62 @@ loaded via a namespace (and not attached):
 </div>
 </section>
 <section class="slide level2">
+<h2>What if I like <code>sessionInfo()</code>?</h2>
+<ul>
+<li><p>You can still report it.</p></li>
+<li><p>See also <code>renv::dependencies()</code></p></li>
+</ul>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Finding R package dependencies ... Done!</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                                     Source   Package Require
+1        /home/maelle/Documents/EMODnet/renv-demo/index.qmd      glue        
+2        /home/maelle/Documents/EMODnet/renv-demo/index.qmd      httr        
+3        /home/maelle/Documents/EMODnet/renv-demo/index.qmd        fs        
+4        /home/maelle/Documents/EMODnet/renv-demo/index.qmd      brio        
+5        /home/maelle/Documents/EMODnet/renv-demo/index.qmd      glue        
+6        /home/maelle/Documents/EMODnet/renv-demo/index.qmd      brio        
+7        /home/maelle/Documents/EMODnet/renv-demo/index.qmd      glue        
+8        /home/maelle/Documents/EMODnet/renv-demo/index.qmd      renv        
+9        /home/maelle/Documents/EMODnet/renv-demo/index.qmd rmarkdown        
+10 /home/maelle/Documents/EMODnet/renv-demo/index.rmarkdown rmarkdown        
+11 /home/maelle/Documents/EMODnet/renv-demo/index.rmarkdown      glue        
+12 /home/maelle/Documents/EMODnet/renv-demo/index.rmarkdown      httr        
+13 /home/maelle/Documents/EMODnet/renv-demo/index.rmarkdown        fs        
+14 /home/maelle/Documents/EMODnet/renv-demo/index.rmarkdown      brio        
+15 /home/maelle/Documents/EMODnet/renv-demo/index.rmarkdown      glue        
+16 /home/maelle/Documents/EMODnet/renv-demo/index.rmarkdown      brio        
+17 /home/maelle/Documents/EMODnet/renv-demo/index.rmarkdown      glue        
+18 /home/maelle/Documents/EMODnet/renv-demo/index.rmarkdown      renv        
+   Version   Dev
+1          FALSE
+2          FALSE
+3          FALSE
+4          FALSE
+5          FALSE
+6          FALSE
+7          FALSE
+8          FALSE
+9          FALSE
+10         FALSE
+11         FALSE
+12         FALSE
+13         FALSE
+14         FALSE
+15         FALSE
+16         FALSE
+17         FALSE
+18         FALSE</code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
 <h2>Further resources on renv itself</h2>
 <ul>
 <li><a href="https://rstudio.github.io/renv/">renv website</a>;</li>
+<li><a href="https://kevinushey-2020-rstudio-conf.netlify.app/slides.html#139">What’s Missing from renv</a>;</li>
 <li><a href="https://www.rstudio.com/conference/2022/talks/you-should-use-renv/">“You should be using renv”, talk by E. David Aja</a>;</li>
 <li>(in French) <a href="https://r-toulouse.netlify.app/evenements/2021-05-28-diaporama-et-vid%C3%A9o-de-la-rencontre-de-mai-2021/">“Package renv : présentation et retour d’expérience” by Elise Maigné</a>.</li>
 </ul>
