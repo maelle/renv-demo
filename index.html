@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="renv-demo_files/libs/clipboard/clipboard.min.js"></script>
-<script src="renv-demo_files/libs/quarto-html/tabby.min.js"></script>
-<script src="renv-demo_files/libs/quarto-html/popper.min.js"></script>
-<script src="renv-demo_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="renv-demo_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="renv-demo_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="renv-demo_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-99.9.9">
 
   <meta name="author" content="Maëlle Salmon">
@@ -14,8 +14,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="renv-demo_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="renv-demo_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -93,11 +93,11 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="renv-demo_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <link href="renv-demo_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="renv-demo_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="renv-demo_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="renv-demo_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -399,9 +399,9 @@
 </div>
 <ul>
 <li>Why use renv?</li>
-<li>How to use it</li>
+<li>How to use it?</li>
 </ul>
-<div class="cell" data-hash="renv-demo_cache/revealjs/board_3f265f126b682f9ae7b0d918fb27d666">
+<div class="cell" data-hash="index_cache/revealjs/board_3099878aa67c64a8a84f21eaa2238666">
 <div style="display:grid; margin-top: 3rem;"><figure>
     <img src="7718755.jpeg" alt="To do list on a clipboard" width="400"> <figcaption>
             <p>Picture by <a href="https://www.pexels.com/photo/a-to-do-list-on-a-clipboard-7718755/">MART PRODUCTION on Pexels</a>.</p>
@@ -410,19 +410,19 @@
 </div>
 </section>
 <section class="slide level2">
-<h2>Your project depends on its dependencies</h2>
-<p>To state the obvious <span class="emoji" data-emoji="sweat_smile">😅</span> Let’s concentrate on software dependencies.</p>
+<h2>Your project depends on</h2>
+<p>…its dependencies. To state the obvious <span class="emoji" data-emoji="sweat_smile">😅</span> Let’s concentrate on software dependencies.</p>
 <div class="fragment">
-<p>R packages evolve over time.</p>
+<p>… its dependencies, wherever they come from. CRAN, R-universe, GitHub.</p>
 </div>
 <div class="fragment">
-<p>Some of them come from CRAN, others from R-universe, others from GitHub.</p>
+<p>… its dependencies as they are now. R packages evolve over time.</p>
 </div>
 </section>
 <section class="slide level2">
 <h2>Future users of your code</h2>
-<p>including yourself <span class="emoji" data-emoji="wink">😉</span> should be able to use the same packages and their same versions to re-run your code.</p>
-<div class="cell" data-hash="renv-demo_cache/revealjs/wish_3ad51f81fc34455321023df59ec5cdd4">
+<p>including yourself <span class="emoji" data-emoji="wink">😉</span> should be able to easily use the same packages and their same versions to re-run your code.</p>
+<div class="cell" data-hash="index_cache/revealjs/wish_84a238bda13ee557387ee73c205965aa">
 <div style="display:grid; margin-top: 3rem;"><figure>
     <img src="5723951.jpeg" alt="Letter to Santa" width="220"> <figcaption>
             <p>Picture by <a href="https://www.pexels.com/photo/letters-for-santa-5723951/">Olya Kobruseva on Pexels</a>.</p>
@@ -458,9 +458,12 @@ loaded via a namespace (and not attached):
  [4] cli_3.4.0.9000       tools_4.2.0          htmltools_0.5.3.9000
  [7] rstudioapi_0.14      yaml_2.3.5           stringi_1.7.8       
 [10] rmarkdown_2.16       knitr_1.40           stringr_1.4.1       
-[13] xfun_0.32            digest_0.6.29        jsonlite_1.8.0      
+[13] xfun_0.33            digest_0.6.29        jsonlite_1.8.0      
 [16] rlang_1.0.5.9000     evaluate_0.16       </code></pre>
 </div>
+</div>
+<div class="fragment">
+<p>This can’t be used directly.</p>
 </div>
 </section>
 <section class="slide level2">
@@ -470,7 +473,7 @@ loaded via a namespace (and not attached):
 </div>
 <div class="fragment">
 <p>renv is a better way to do that, with <span class="emoji" data-emoji="sparkles">✨</span> little overhead <span class="emoji" data-emoji="sparkles">✨</span></p>
-<div class="cell" data-hash="renv-demo_cache/revealjs/cogwheels_729e4a32b219f8e39606cb7bcb117c14">
+<div class="cell" data-hash="index_cache/revealjs/cogwheels_4def2e66a9a3c0dca9e73a62ce08024e">
 <div style="display:grid; margin-top: 3rem;"><figure>
     <img src="3785927.jpeg" alt="Golden cogwheels on dark background" width="360"> <figcaption>
             <p>Picture by <a href="https://www.pexels.com/photo/photo-of-golden-cogwheel-on-black-background-3785927/">Miguel Á. Padriñán on Pexels</a>.</p>
@@ -481,6 +484,14 @@ loaded via a namespace (and not attached):
 </section>
 <section class="slide level2">
 <h2>First step: install renv!</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">install.packages</span>(<span class="st">"renv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="index_cache/revealjs/room_9afafcff41488c012a76ee03dcbdf032">
+<div style="display:grid; margin-top: 3rem;"><figure>
+    <img src="5691495.jpeg" alt="Renovation in an empty light room with wooden laminates" width="500"> <figcaption>
+            <p>Picture by <a href="https://www.pexels.com/photo/renovation-in-light-room-with-wooden-laminate-5691495/">Ksenia Chernaya on Pexels</a>.</p>
+        </figcaption>
+</figure></div>
+</div>
 </section>
 <section class="slide level2">
 <h2>The renv workflow</h2>
@@ -523,14 +534,14 @@ loaded via a namespace (and not attached):
 <section class="slide level2">
 <h2>Anatomy of a project using renv</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>fs<span class="sc">::</span><span class="fu">dir_ls</span>(<span class="st">"../project1"</span>, <span class="at">all =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>fs<span class="sc">::</span><span class="fu">dir_ls</span>(<span class="st">"../project1"</span>, <span class="at">all =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>../project1/.Rprofile      ../project1/.Rproj.user    
 ../project1/.git           ../project1/.gitignore     
 ../project1/R              ../project1/project1.Rproj 
 ../project1/renv           ../project1/renv.lock      </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>fs<span class="sc">::</span><span class="fu">dir_ls</span>(<span class="st">"../project1/renv"</span>, <span class="at">all =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>fs<span class="sc">::</span><span class="fu">dir_ls</span>(<span class="st">"../project1/renv"</span>, <span class="at">all =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>../project1/renv/.gitignore   ../project1/renv/activate.R   
 ../project1/renv/library      ../project1/renv/settings.dcf 
@@ -540,46 +551,6 @@ loaded via a namespace (and not attached):
 </section>
 <section class="slide level2">
 <h2>The <code>renv.lock</code> file in project1</h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml{ number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a href="#cb6-1"></a>  "R": {</span>
-<span id="cb6-2"><a href="#cb6-2"></a>    "Version": "4.2.0",</span>
-<span id="cb6-3"><a href="#cb6-3"></a>    "Repositories": [</span>
-<span id="cb6-4"><a href="#cb6-4"></a>      {</span>
-<span id="cb6-5"><a href="#cb6-5"></a>        "Name": "RSPM",</span>
-<span id="cb6-6"><a href="#cb6-6"></a>        "URL": "https://packagemanager.rstudio.com/all/latest"</span>
-<span id="cb6-7"><a href="#cb6-7"></a>      },</span>
-<span id="cb6-8"><a href="#cb6-8"></a>      {</span>
-<span id="cb6-9"><a href="#cb6-9"></a>        "Name": "CRAN",</span>
-<span id="cb6-10"><a href="#cb6-10"></a>        "URL": "https://cloud.r-project.org"</span>
-<span id="cb6-11"><a href="#cb6-11"></a>      }</span>
-<span id="cb6-12"><a href="#cb6-12"></a>    ]</span>
-<span id="cb6-13"><a href="#cb6-13"></a>  },</span>
-<span id="cb6-14"><a href="#cb6-14"></a>  "Packages": {</span>
-<span id="cb6-15"><a href="#cb6-15"></a>    "coolcool": {</span>
-<span id="cb6-16"><a href="#cb6-16"></a>      "Package": "coolcool",</span>
-<span id="cb6-17"><a href="#cb6-17"></a>      "Version": "1.0.0",</span>
-<span id="cb6-18"><a href="#cb6-18"></a>      "Source": "GitHub",</span>
-<span id="cb6-19"><a href="#cb6-19"></a>      "RemoteType": "github",</span>
-<span id="cb6-20"><a href="#cb6-20"></a>      "RemoteHost": "api.github.com",</span>
-<span id="cb6-21"><a href="#cb6-21"></a>      "RemoteUsername": "maelle",</span>
-<span id="cb6-22"><a href="#cb6-22"></a>      "RemoteRepo": "coolcool",</span>
-<span id="cb6-23"><a href="#cb6-23"></a>      "RemoteRef": "v1.0.0",</span>
-<span id="cb6-24"><a href="#cb6-24"></a>      "RemoteSha": "f94dc7963719213b6cd1d4c4474b405c9d722a2b",</span>
-<span id="cb6-25"><a href="#cb6-25"></a>      "Hash": "51d05ff5c3d3ca1354bfa949a44d3c63",</span>
-<span id="cb6-26"><a href="#cb6-26"></a>      "Requirements": []</span>
-<span id="cb6-27"><a href="#cb6-27"></a>    },</span>
-<span id="cb6-28"><a href="#cb6-28"></a>    "renv": {</span>
-<span id="cb6-29"><a href="#cb6-29"></a>      "Package": "renv",</span>
-<span id="cb6-30"><a href="#cb6-30"></a>      "Version": "0.15.5",</span>
-<span id="cb6-31"><a href="#cb6-31"></a>      "Source": "Repository",</span>
-<span id="cb6-32"><a href="#cb6-32"></a>      "Repository": "RSPM",</span>
-<span id="cb6-33"><a href="#cb6-33"></a>      "Hash": "6a38294e7d12f5d8e656b08c5bd8ae34",</span>
-<span id="cb6-34"><a href="#cb6-34"></a>      "Requirements": []</span>
-<span id="cb6-35"><a href="#cb6-35"></a>    }</span>
-<span id="cb6-36"><a href="#cb6-36"></a>  }</span>
-<span id="cb6-37"><a href="#cb6-37"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section class="slide level2">
-<h2>The <code>renv.lock</code> file in project2</h2>
 <div class="sourceCode" id="cb7"><pre class="sourceCode numberSource yaml{ number-lines code-with-copy"><code class="sourceCode"><span id="cb7-1"><a href="#cb7-1"></a>  "R": {</span>
 <span id="cb7-2"><a href="#cb7-2"></a>    "Version": "4.2.0",</span>
 <span id="cb7-3"><a href="#cb7-3"></a>    "Repositories": [</span>
@@ -596,15 +567,15 @@ loaded via a namespace (and not attached):
 <span id="cb7-14"><a href="#cb7-14"></a>  "Packages": {</span>
 <span id="cb7-15"><a href="#cb7-15"></a>    "coolcool": {</span>
 <span id="cb7-16"><a href="#cb7-16"></a>      "Package": "coolcool",</span>
-<span id="cb7-17"><a href="#cb7-17"></a>      "Version": "2.0.0",</span>
+<span id="cb7-17"><a href="#cb7-17"></a>      "Version": "1.0.0",</span>
 <span id="cb7-18"><a href="#cb7-18"></a>      "Source": "GitHub",</span>
 <span id="cb7-19"><a href="#cb7-19"></a>      "RemoteType": "github",</span>
 <span id="cb7-20"><a href="#cb7-20"></a>      "RemoteHost": "api.github.com",</span>
 <span id="cb7-21"><a href="#cb7-21"></a>      "RemoteUsername": "maelle",</span>
 <span id="cb7-22"><a href="#cb7-22"></a>      "RemoteRepo": "coolcool",</span>
-<span id="cb7-23"><a href="#cb7-23"></a>      "RemoteRef": "v2.0.0",</span>
-<span id="cb7-24"><a href="#cb7-24"></a>      "RemoteSha": "0b896d6c30dfb2b0ace3a881642769851aaf100c",</span>
-<span id="cb7-25"><a href="#cb7-25"></a>      "Hash": "8da8b82994ba0ecdc7d2c6cee0cd8b76",</span>
+<span id="cb7-23"><a href="#cb7-23"></a>      "RemoteRef": "v1.0.0",</span>
+<span id="cb7-24"><a href="#cb7-24"></a>      "RemoteSha": "f94dc7963719213b6cd1d4c4474b405c9d722a2b",</span>
+<span id="cb7-25"><a href="#cb7-25"></a>      "Hash": "51d05ff5c3d3ca1354bfa949a44d3c63",</span>
 <span id="cb7-26"><a href="#cb7-26"></a>      "Requirements": []</span>
 <span id="cb7-27"><a href="#cb7-27"></a>    },</span>
 <span id="cb7-28"><a href="#cb7-28"></a>    "renv": {</span>
@@ -619,10 +590,50 @@ loaded via a namespace (and not attached):
 <span id="cb7-37"><a href="#cb7-37"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section class="slide level2">
+<h2>The <code>renv.lock</code> file in project2</h2>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource yaml{ number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a href="#cb8-1"></a>  "R": {</span>
+<span id="cb8-2"><a href="#cb8-2"></a>    "Version": "4.2.0",</span>
+<span id="cb8-3"><a href="#cb8-3"></a>    "Repositories": [</span>
+<span id="cb8-4"><a href="#cb8-4"></a>      {</span>
+<span id="cb8-5"><a href="#cb8-5"></a>        "Name": "RSPM",</span>
+<span id="cb8-6"><a href="#cb8-6"></a>        "URL": "https://packagemanager.rstudio.com/all/latest"</span>
+<span id="cb8-7"><a href="#cb8-7"></a>      },</span>
+<span id="cb8-8"><a href="#cb8-8"></a>      {</span>
+<span id="cb8-9"><a href="#cb8-9"></a>        "Name": "CRAN",</span>
+<span id="cb8-10"><a href="#cb8-10"></a>        "URL": "https://cloud.r-project.org"</span>
+<span id="cb8-11"><a href="#cb8-11"></a>      }</span>
+<span id="cb8-12"><a href="#cb8-12"></a>    ]</span>
+<span id="cb8-13"><a href="#cb8-13"></a>  },</span>
+<span id="cb8-14"><a href="#cb8-14"></a>  "Packages": {</span>
+<span id="cb8-15"><a href="#cb8-15"></a>    "coolcool": {</span>
+<span id="cb8-16"><a href="#cb8-16"></a>      "Package": "coolcool",</span>
+<span id="cb8-17"><a href="#cb8-17"></a>      "Version": "2.0.0",</span>
+<span id="cb8-18"><a href="#cb8-18"></a>      "Source": "GitHub",</span>
+<span id="cb8-19"><a href="#cb8-19"></a>      "RemoteType": "github",</span>
+<span id="cb8-20"><a href="#cb8-20"></a>      "RemoteHost": "api.github.com",</span>
+<span id="cb8-21"><a href="#cb8-21"></a>      "RemoteUsername": "maelle",</span>
+<span id="cb8-22"><a href="#cb8-22"></a>      "RemoteRepo": "coolcool",</span>
+<span id="cb8-23"><a href="#cb8-23"></a>      "RemoteRef": "v2.0.0",</span>
+<span id="cb8-24"><a href="#cb8-24"></a>      "RemoteSha": "0b896d6c30dfb2b0ace3a881642769851aaf100c",</span>
+<span id="cb8-25"><a href="#cb8-25"></a>      "Hash": "8da8b82994ba0ecdc7d2c6cee0cd8b76",</span>
+<span id="cb8-26"><a href="#cb8-26"></a>      "Requirements": []</span>
+<span id="cb8-27"><a href="#cb8-27"></a>    },</span>
+<span id="cb8-28"><a href="#cb8-28"></a>    "renv": {</span>
+<span id="cb8-29"><a href="#cb8-29"></a>      "Package": "renv",</span>
+<span id="cb8-30"><a href="#cb8-30"></a>      "Version": "0.15.5",</span>
+<span id="cb8-31"><a href="#cb8-31"></a>      "Source": "Repository",</span>
+<span id="cb8-32"><a href="#cb8-32"></a>      "Repository": "RSPM",</span>
+<span id="cb8-33"><a href="#cb8-33"></a>      "Hash": "6a38294e7d12f5d8e656b08c5bd8ae34",</span>
+<span id="cb8-34"><a href="#cb8-34"></a>      "Requirements": []</span>
+<span id="cb8-35"><a href="#cb8-35"></a>    }</span>
+<span id="cb8-36"><a href="#cb8-36"></a>  }</span>
+<span id="cb8-37"><a href="#cb8-37"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section class="slide level2">
 <h2>The difference</h2>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">"RemoteRef"</span><span class="kw">:</span><span class="at"> </span><span class="st">"v1.0.0"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">"RemoteRef"</span><span class="kw">:</span><span class="at"> </span><span class="st">"v1.0.0"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>vs</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">"RemoteRef"</span><span class="kw">:</span><span class="at"> </span><span class="st">"v2.0.0"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">"RemoteRef"</span><span class="kw">:</span><span class="at"> </span><span class="st">"v2.0.0"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <p>How do we get there?</p>
 </div>
@@ -660,7 +671,7 @@ loaded via a namespace (and not attached):
 <li><a href="https://www.rstudio.com/conference/2022/talks/you-should-use-renv/">“You should be using renv”, talk by E. David Aja</a>;</li>
 <li>(in French) <a href="https://r-toulouse.netlify.app/evenements/2021-05-28-diaporama-et-vid%C3%A9o-de-la-rencontre-de-mai-2021/">“Package renv : présentation et retour d’expérience” by Elise Maigné</a>.</li>
 </ul>
-<div class="cell" data-hash="renv-demo_cache/revealjs/sprout_41a3ac0016b4d18b42bf57681592ff90">
+<div class="cell" data-hash="index_cache/revealjs/sprout_8f93bacf65946aeedc40612df43db79a">
 <div style="display:grid; margin-top: 3rem;"><figure>
     <img src="1002703.jpeg" alt="Close-up photo of sprout" width="300"> <figcaption>
             <p>Picture by <a href="https://www.pexels.com/photo/closeup-photo-of-sprout-1002703/">PhotoMIX Company on Pexels</a>.</p>
@@ -674,7 +685,7 @@ loaded via a namespace (and not attached):
 <li><p><a href="https://github.com/MilesMcBain/capsule">capsule by Miles McBain</a>, An inversion of renv for low effort reproducible R package libraries;</p></li>
 <li><p><a href="https://colinfay.me/docker-r-reproducibility/">Docker, blog post by Colin Fay</a>.</p></li>
 </ul>
-<div class="cell" data-hash="renv-demo_cache/revealjs/carton_fa9930189a11f6ed944639ad0520bb98">
+<div class="cell" data-hash="index_cache/revealjs/carton_794645690a9879fce35c5b1c42f39f5b">
 <div style="display:grid; margin-top: 3rem;"><figure>
     <img src="6831673.jpeg" alt="Carton box tied with ribbon and flowers" width="400"> <figcaption>
             <p>Picture by <a href="https://www.pexels.com/photo/carton-box-tied-with-ribbon-and-flowers-6831673/">Maahid Photos on Pexels</a>.</p>
@@ -689,19 +700,19 @@ loaded via a namespace (and not attached):
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="renv-demo_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="renv-demo_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="renv-demo_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="renv-demo_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="renv-demo_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="renv-demo_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="renv-demo_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="renv-demo_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="renv-demo_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="renv-demo_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

@@ -39,7 +39,7 @@ cat("\n```\n")
 }
 ```
 - Why use renv?
-- How to use it
+- How to use it?
 
 ```{r board}
 #| results: "asis"
@@ -48,21 +48,21 @@ cat("\n```\n")
 get_pic(id = 7718755, alt = "To do list on a clipboard", 400)
 ```
 
-## Your project depends on its dependencies
+## Your project depends on 
 
-To state the obvious :sweat_smile: Let's concentrate on software dependencies.
-
-. . .
-
-R packages evolve over time.
+...its dependencies. To state the obvious :sweat_smile: Let's concentrate on software dependencies.
 
 . . .
 
-Some of them come from CRAN, others from R-universe, others from GitHub.
+... its dependencies, wherever they come from. CRAN, R-universe, GitHub.
+
+. . .
+
+... its dependencies as they are now. R packages evolve over time.
 
 ## Future users of your code
 
-including yourself :wink: should be able to use the same packages and their same versions to re-run your code.
+including yourself :wink: should be able to easily use the same packages and their same versions to re-run your code.
 
 
 ```{r wish}
@@ -78,6 +78,10 @@ get_pic(id = 5723951, alt = "Letter to Santa", 220)
 sessionInfo()
 
 ```
+
+. . .
+
+This can't be used directly.
 
 ## Ever used `sessionInfo()` to list dependencies?
 
@@ -97,6 +101,17 @@ get_pic(id = 3785927, alt = "Golden cogwheels on dark background", 360)
 ```
 
 ## First step: install renv!
+
+```r
+install.packages("renv")
+```
+
+```{r room}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 5691495, alt = "Renovation in an empty light room with wooden laminates", 500)
+```
 
 ## The renv workflow
 
