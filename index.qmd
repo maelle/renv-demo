@@ -41,11 +41,13 @@ cat("\n```\n")
 - Why use renv?
 - How to use it?
 
+:link: <https://maelle.github.io/renv-demo>
+
 ```{r board}
 #| results: "asis"
 #| cache: true
 #| echo: false
-get_pic(id = 7718755, alt = "To do list on a clipboard", 400)
+get_pic(id = 7718755, alt = "To do list on a clipboard", 300)
 ```
 
 ## Your project depends on 
@@ -282,6 +284,33 @@ The first installation might take time, the second no because it uses the cache.
 renv::dependencies()
 ```
 
+## RStudio or not
+
+renv works without RStudio too!
+
+It is well supported in RStudio, for instance when creating a new project from the menu.
+
+```{r studio}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 3784424, alt = "Black and brown audio mixer", 400)
+```
+
+## Summary
+
+Once per computer: `install.packages("renv")`.
+
+In each project:
+
+- `renv::init()` once, 
+- `renv::install()` as often as needed, 
+- `renv::snapshot()` regularly.
+
+When adopting a project: `renv::restore()`.
+
+:link: <https://maelle.github.io/renv-demo>
+
 ## Further resources on renv itself
 
 + [renv website](https://rstudio.github.io/renv/);
@@ -293,7 +322,7 @@ renv::dependencies()
 #| results: "asis"
 #| cache: true
 #| echo: false
-get_pic(id = 1002703, alt = "Close-up photo of sprout", 300)
+get_pic(id = 1002703, alt = "Close-up photo of sprout", 200)
 ```
 
 ## Further, further resources
