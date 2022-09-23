@@ -102,6 +102,8 @@ get_pic(id = 3785927, alt = "Golden cogwheels on dark background", 360)
 
 ## First step: install renv!
 
+Once per computer / per R update.
+
 ```r
 install.packages("renv")
 ```
@@ -113,7 +115,7 @@ install.packages("renv")
 get_pic(id = 5691495, alt = "Renovation in an empty light room with wooden laminates", 500)
 ```
 
-## The renv workflow
+## The renv workflow in each project
 
 * Start with `renv::init()`.
 
@@ -141,12 +143,26 @@ get_pic(id = 5691495, alt = "Renovation in an empty light room with wooden lamin
 
 * I canNOT run `coolcool::my_best_function()`.
 
+```{r one}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 2249528, alt = "Gold one on blue background", 200)
+```
 
 ## In project2...
 
 * I canNOT run `coolcool::my_favorite_function()`.
 
 * I can run `coolcool::my_best_function()`.
+
+
+```{r two}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 1061141, alt = "Steel chain two on orange background", 200)
+```
 
 . . .
 
@@ -236,6 +252,25 @@ How do we get there?
 * `coolcool::my_best_function()` :grin:
 
 :::
+
+## Zoom on `renv::install()`
+
+Will it take ages to re-install packages in each project? :scream:
+
+```{r wait}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 11747091, alt = "Close-up of a green alarm clock", 200)
+```
+
+. . .
+
+No! renv creates a central cache from which it can pick packages quickly.
+
+. . .
+
+The first installation might take time, the second no because it uses the cache.
 
 ## Further resources on renv itself
 

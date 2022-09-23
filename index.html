@@ -484,6 +484,7 @@ loaded via a namespace (and not attached):
 </section>
 <section class="slide level2">
 <h2>First step: install renv!</h2>
+<p>Once per computer / per R update.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">install.packages</span>(<span class="st">"renv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell" data-hash="index_cache/revealjs/room_9afafcff41488c012a76ee03dcbdf032">
 <div style="display:grid; margin-top: 3rem;"><figure>
@@ -494,7 +495,7 @@ loaded via a namespace (and not attached):
 </div>
 </section>
 <section class="slide level2">
-<h2>The renv workflow</h2>
+<h2>The renv workflow in each project</h2>
 <ul>
 <li><p>Start with <code>renv::init()</code>.</p></li>
 <li><p>Install packages with <code>renv::install("ggplot2")</code>.</p></li>
@@ -520,6 +521,13 @@ loaded via a namespace (and not attached):
 <li><p>I can run <code>coolcool::my_favorite_function()</code>.</p></li>
 <li><p>I canNOT run <code>coolcool::my_best_function()</code>.</p></li>
 </ul>
+<div class="cell" data-hash="index_cache/revealjs/one_2442a66de606f572d696e93f510a56c6">
+<div style="display:grid; margin-top: 3rem;"><figure>
+    <img src="2249528.jpeg" alt="Gold one on blue background" width="200"> <figcaption>
+            <p>Picture by <a href="https://www.pexels.com/photo/gold-1-freestanding-decor-2249528/">Miguel Á. Padriñán on Pexels</a>.</p>
+        </figcaption>
+</figure></div>
+</div>
 </section>
 <section class="slide level2">
 <h2>In project2…</h2>
@@ -527,6 +535,13 @@ loaded via a namespace (and not attached):
 <li><p>I canNOT run <code>coolcool::my_favorite_function()</code>.</p></li>
 <li><p>I can run <code>coolcool::my_best_function()</code>.</p></li>
 </ul>
+<div class="cell" data-hash="index_cache/revealjs/two_8ab168a74e3a167429a0f281b350a1ff">
+<div style="display:grid; margin-top: 3rem;"><figure>
+    <img src="1061141.jpeg" alt="Steel chain two on orange background" width="200"> <figcaption>
+            <p>Picture by <a href="https://www.pexels.com/photo/gray-steel-chain-on-orange-surface-1061141/">Miguel Á. Padriñán on Pexels</a>.</p>
+        </figcaption>
+</figure></div>
+</div>
 <div class="fragment">
 <p>Why is it so?</p>
 </div>
@@ -662,6 +677,23 @@ loaded via a namespace (and not attached):
 <li class="fragment"><p><span class="emoji" data-emoji="eyes">👀</span> look <span class="emoji" data-emoji="eyes">👀</span></p></li>
 <li class="fragment"><p><code>coolcool::my_best_function()</code> <span class="emoji" data-emoji="grin">😁</span></p></li>
 </ul>
+</div>
+</section>
+<section class="slide level2">
+<h2>Zoom on <code>renv::install()</code></h2>
+<p>Will it take ages to re-install packages in each project? <span class="emoji" data-emoji="scream">😱</span></p>
+<div class="cell" data-hash="index_cache/revealjs/wait_081066a0d898b25ba8b77df17d0f1720">
+<div style="display:grid; margin-top: 3rem;"><figure>
+    <img src="11747091.jpeg" alt="Close-up of a green alarm clock" width="200"> <figcaption>
+            <p>Picture by <a href="https://www.pexels.com/photo/close-up-photo-of-a-green-alarm-clock-11747091/">Jafaris Mustafa on Pexels</a>.</p>
+        </figcaption>
+</figure></div>
+</div>
+<div class="fragment">
+<p>No! renv creates a central cache from which it can pick packages quickly.</p>
+</div>
+<div class="fragment">
+<p>The first installation might take time, the second no because it uses the cache.</p>
 </div>
 </section>
 <section class="slide level2">
