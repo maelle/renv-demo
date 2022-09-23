@@ -131,6 +131,13 @@ get_pic(id = 5691495, alt = "Renovation in an empty light room with wooden lamin
 
 `renv::restore()`
 
+```{r restore}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 4792494, alt = "Set of instruments on floor", 500)
+```
+
 ## Demo
 
 * The [coolcool](https://github.com/maelle/coolcool) package has two versions on GitHub, with different functions.
