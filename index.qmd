@@ -93,7 +93,7 @@ You were on the right track.
 
 . . .
 
-renv is a better way to do that, with :sparkles: little overhead :sparkles:
+renv by Kevin Ushey is a better way to do that, with :sparkles: little overhead :sparkles:
 
 ```{r cogwheels}
 #| results: "asis"
