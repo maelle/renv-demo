@@ -230,13 +230,15 @@ How do we get there?
 
 ::: {.incremental}
 
-* `create_project("../project0")`
+* `usethis::create_project("../project0")`
 
 * `renv::init()` then :eyes: look :eyes:
 
 * `renv::install("maelle/coolcool")`
 
-* `use_r("blop")`, write `coolcool::my_best_function()`
+* Create `r/blop.R`, write `coolcool::my_best_function()`
+
+* `renv::status()`
 
 * `renv::snapshot()` then :eyes: look :eyes:
 
@@ -248,7 +250,7 @@ How do we get there?
 
 ::: {.incremental}
 
-* In another folder `create_from_github("maelle/project0")`
+* Close project. In another folder `create_from_github("maelle/project0")`
 
 * :eyes: look :eyes:
 
@@ -291,11 +293,11 @@ The first installation might take time, the second no because it uses the cache.
 renv::dependencies()
 ```
 
-## RStudio or not
+## RStudio IDE or not
 
-renv works without RStudio too!
+renv works without RStudio IDE too!
 
-It is well supported in RStudio, for instance when creating a new project from the menu.
+It is well supported in RStudio IDE, for instance when creating a new project from the menu.
 
 ```{r studio}
 #| results: "asis"
