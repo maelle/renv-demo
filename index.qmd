@@ -287,7 +287,7 @@ The first installation might take time, the second no because it uses the cache.
 
 * You can still report it.
 
-* See also `renv::dependencies()`
+* See also [`report::report(sessionInfo())`](https://github.com/easystats/report#report-system-and-packages), and `renv::dependencies()`
 
 ```{r}
 renv::dependencies()
